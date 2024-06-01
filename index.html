@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/laetitia-pafundi-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio Laetitia</title>
 </head>
 <body>
     <div id="loader" class="loader">
-        <span>Bienvenue</span>
+        <img src="./assets/laetitia-pafundi-logo.svg" alt="Laetitia Pafundi">
     </div>
     <div class="main">
         <div class="full-page-container centered">
@@ -16,11 +17,13 @@
                 <h1>Laetitia Pafundi</h1>
                 <p>Découvrez mon portfolio regroupant tout mon travail de ces dernières années.</p>
             </div>
-            <span class="scrolling-way-container">                
-                <a href="#pdf-anchor"><div class="arrow-down"></div></a>
-            </span>
+            <div class="scrolling-way-container">                
+                <a href="#pdf-section">
+                    <div id="lottie-arrow" class="arrow-down"></div>
+                </a>
+            </div>
         </div>
-        <div id="pdf-anchor" class="full-page-container pdf-embed-container">
+        <div id="pdf-section" class="full-page-container pdf-embed-container">
             <iframe class="pdf-iframe" src="https://online.fliphtml5.com/cybbs/zsql/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
         </div> 
         <div class="footer">
@@ -29,6 +32,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
