@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const scrollToSection = (index) => {
         isScrolling = true;
-        sections[index].scrollIntoView({ behavior: 'smooth' });
+        sections[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
         setTimeout(() => { isScrolling = false; }, 1000); // Delay to prevent excessive scrolling
     };
 
@@ -26,11 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Dissolution de l'opacité du loader
     setTimeout(() => {
         gsap.to('.loader', { duration: 1, opacity: 0, onComplete: () => {
-            document.getElementById("loader").style.display = "none";
+            document.getElementById("loader").style.display = "none"; // hide loader after fading out
         }});
-    }, 2000);
+    }, 3000); // 3000 milliseconds = 3 seconds
 
-    gsap.to('.loader', { duration: 2, opacity: 0, delay: 3 });
+    // Initialiser l'animation Lottie
+    const lottieArrow = document.getElementById('lottie-arrow');
+    lottie.loadAnimation({
+        container: lottieArrow,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: './assets/lottie/laetitia-pafundi-animation.json'
+    });
 });
