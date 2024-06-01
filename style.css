@@ -58,6 +58,7 @@ p {
 }
 
 .full-page-container {
+    position: relative;
     height: 100vh;
     scroll-snap-align: start;
     display: flex;
@@ -67,6 +68,12 @@ p {
 
 .centered .content {
     text-align: center;
+}
+
+.scrolling-way-container {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
 }
 
 .arrow-down {
@@ -104,36 +111,6 @@ p {
     position: absolute;
     width: 80%;
     height: 80%;
-}
-
-.button-1 {
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: var(--background-color);
-    cursor: pointer;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    margin: 14px 0;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-1:hover,
-.button-1:focus {
-    background-color: var(--button-hover-color);
 }
 
 .footer {
