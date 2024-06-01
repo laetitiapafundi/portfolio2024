@@ -1,0 +1,142 @@
+:root {
+    --primary-color: yellow;
+    --secondary-color: #fff;
+    --button-hover-color: #F082AC;
+    --background-color: #111;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-size: 14px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+p {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-size: 40px;
+}
+
+.loader.hidden {
+    display: none;
+}
+
+
+.main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.full-page-container {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered .content {
+    text-align: center;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--primary-color);
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); 
+    }
+    40% {
+        transform: translateY(-10px); 
+    }
+    60% {
+        transform: translateY(-5px); 
+    }
+}
+
+.pdf-embed-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-iframe {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+.button-1 {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--background-color);
+    cursor: pointer;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    margin: 14px 0;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: var(--button-hover-color);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10px;
+}
