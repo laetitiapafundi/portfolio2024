@@ -16,6 +16,16 @@ body {
     overflow-x: hidden;
 }
 
+.main::-webkit-scrollbar {
+    display: none !important;
+    width: 0px;
+}
+
+.main {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 h1 {
     color: var(--primary-color);
     font-size: 40px;
