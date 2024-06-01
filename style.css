@@ -7,6 +7,10 @@
     --background-color: #111;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto';
     background-color: var(--background-color);
