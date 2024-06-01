@@ -64,7 +64,7 @@ h1 {
 
 .scrolling-way-container {
     position: absolute;
-    bottom: 80px;
+    bottom: 16%;
     left: 50%;
     transform: translateX(-50%);
 }
