@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --primary-color: yellow;
+    --primary-color: #F7B82D;
     --secondary-color: #fff;
     --button-hover-color: #F082AC;
     --background-color: #111;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -32,10 +28,6 @@ p {
     margin-right: 16px;
 }
 
-#logoBar {
-    display: none !important;
-}
-
 .loader {
     position: fixed;
     top: 0;
@@ -53,7 +45,6 @@ p {
 .loader.hidden {
     display: none;
 }
-
 
 .main {
     height: 100vh;
@@ -78,28 +69,18 @@ p {
     position: absolute;
     bottom: 80px;
     left: 50%;
+    transform: translateX(-50%);
 }
 
 .arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid var(--primary-color);
+    width: 50px;
+    height: 50px;
     margin: 20px auto;
-    animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0); 
-    }
-    40% {
-        transform: translateY(-10px); 
-    }
-    60% {
-        transform: translateY(-5px); 
-    }
+.arrow-down svg {
+    width: 100%;
+    height: 100%;
 }
 
 .pdf-embed-container {
