@@ -14,8 +14,6 @@ body {
     font-size: 14px;
     margin: 0;
     overflow-x: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 h1 {
@@ -60,6 +58,8 @@ h1 {
 
 .centered .content {
     text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .scrolling-way-container {
