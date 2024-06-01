@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gsap.to('.loader', { duration: 1, opacity: 0, onComplete: () => {
             document.getElementById("loader").style.display = "none"; // hide loader after fading out
         }});
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 2000);
 
     // Initialiser l'animation Lottie
     const lottieArrow = document.getElementById('lottie-arrow');
