@@ -32,10 +32,6 @@ p {
     display: none !important;
 }
 
-.pt-brand-bar {
-    display: none !important;
-}
-
 .loader {
     position: fixed;
     top: 0;
