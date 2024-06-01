@@ -45,6 +45,8 @@ h1 {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .full-page-container {
@@ -58,8 +60,6 @@ h1 {
 
 .centered .content {
     text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 .scrolling-way-container {
