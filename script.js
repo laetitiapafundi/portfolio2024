@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.fromTo('.tada-first', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out' });
             gsap.fromTo('.tada-second', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.5 });
         }});
-    }, 2000);
+    }, 1200);
 
     // Initialiser l'animation Lottie
     const lottieArrow = document.getElementById('lottie-arrow');
