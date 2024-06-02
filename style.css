@@ -72,6 +72,11 @@ h1 {
     padding-right: 16px;
 }
 
+.tada-first, .tada-second {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
 .scrolling-way-container {
     position: absolute;
     bottom: 16%;
