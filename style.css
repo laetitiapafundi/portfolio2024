@@ -100,8 +100,15 @@ h1 {
 
 .pdf-iframe {
     position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .pdf-iframe {
     width: 80%;
     height: 80%;
+    }
 }
 
 .footer {
