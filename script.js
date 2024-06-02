@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Dissolution de l'opacité du loader
+    // Dissolution de l'opacité du loader et animation des classes tada
     setTimeout(() => {
         gsap.to('.loader', { duration: 1, opacity: 0, onComplete: () => {
             document.getElementById("loader").style.display = "none"; // hide loader after fading out
+
+            // Animer les classes tada immédiatement après la disparition du loader
+            gsap.fromTo('.tada-first', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out' });
+            gsap.fromTo('.tada-second', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.5 });
         }});
     }, 2000);
 
