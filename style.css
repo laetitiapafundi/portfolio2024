@@ -116,6 +116,7 @@ a {
 @media screen and (max-width: 768px) {
     .img-hero {
         width: 100%;
+        padding-top: 40px;
     }
 }
 
