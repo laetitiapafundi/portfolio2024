@@ -73,7 +73,12 @@ a {
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .full-page-container {
+        align-items: center;
+    }
 }
 
 .full-page-container:first-child {
@@ -96,10 +101,7 @@ a {
     font-size: 40px;
     font-family: 'Magritte';
     text-align: center;
-    margin: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding: 16px;
     opacity: 0;
     transform: translateY(40px);
 }
