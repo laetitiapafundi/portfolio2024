@@ -104,6 +104,12 @@ a {
     transform: translateY(40px);
 }
 
+@media screen and (max-width: 768px) {
+    .img-hero {
+        width: 400px;
+    }
+}
+
 .img-hero {
     transform: translateY(40px);
     opacity: 0;
