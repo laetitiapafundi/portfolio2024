@@ -130,7 +130,7 @@ a {
 
 .scrolling-way-container {
     position: absolute;
-    bottom: 10%;
+    bottom: 16%;
     left: 50%;
     transform: translateX(-50%);
 }
