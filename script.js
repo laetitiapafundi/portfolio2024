@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tadaFirst = document.querySelector('.tada-first');
-    const tadaFirstRect = tadaFirst.getBoundingClientRect();
-    const initialX = tadaFirstRect.left + tadaFirstRect.width / 2;
-    const initialY = tadaFirstRect.top + tadaFirstRect.height / 2;
+    const tadaFirst = document.querySelector('.tada-second');
+    const tadaFirstRect = tadaSecond.getBoundingClientRect();
+    const initialX = tadaSecondRect.left + tadaSecondRect.width / 2;
+    const initialY = tadaSecondRect.top + tadaSecondRect.height / 2;
     const imgHero = document.querySelector('.img-hero');
 
     document.addEventListener('mousemove', (event) => {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const offsetX = mouseX - initialX;
         const offsetY = mouseY - initialY;
 
-        tadaFirst.style.transform = `translate(${offsetX / 10}px, ${offsetY / 10}px)`;
+        tadaSecond.style.transform = `translate(${offsetX / 10}px, ${offsetY / 10}px)`;
         imgHero.style.transform = `translate(${-offsetX / 10}px, ${-offsetY / 10}px)`;
     });
 
