@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const tadaFirst = document.querySelector('.tada-first');
+    const tadaFirstRect = tadaFirst.getBoundingClientRect();
+    const initialX = tadaFirstRect.left + tadaFirstRect.width / 2;
+    const initialY = tadaFirstRect.top + tadaFirstRect.height / 2;
+    const imgHero = document.querySelector('.img-hero');
+
+    document.addEventListener('mousemove', (event) => {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+        const offsetX = mouseX - initialX;
+        const offsetY = mouseY - initialY;
+
+        tadaFirst.style.transform = `translate(${offsetX / 10}px, ${offsetY / 10}px)`;
+        imgHero.style.transform = `translate(${-offsetX / 10}px, ${-offsetY / 10}px)`;
+    });
+
     const sections = document.querySelectorAll('.full-page-container');
     let currentIndex = 0;
     let isScrolling = false;
@@ -6,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollToSection = (index) => {
         isScrolling = true;
         sections[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setTimeout(() => { isScrolling = false; }, 1000);
+        setTimeout(() => { isScrolling = false; }, 1200);
     };
 
     window.addEventListener('wheel', (event) => {
@@ -29,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("loader").style.display = "none";
 
             gsap.fromTo('.tada-first', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out' });
-            gsap.fromTo('.tada-second', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.5 });
+            gsap.fromTo('.tada-second', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 1 });        
         }});
-    }, 1200);
+    }, 900);
 
     const lottieArrow = document.getElementById('lottie-arrow');
     lottie.loadAnimation({
