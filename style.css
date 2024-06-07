@@ -97,7 +97,7 @@ a {
     position: relative;
 }
 
-.tada-first {
+.tada-second {
     color: var(--primary-color);
     font-size: 40px;
     font-family: 'Magritte';
@@ -108,7 +108,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .tada-first {
+    .tada-second {
         font-size: 60px;
     }
 }
