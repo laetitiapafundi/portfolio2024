@@ -48,13 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.fromTo('.tada-second', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 1 });        
         }});
     }, 900);
-
-    const lottieArrow = document.getElementById('lottie-arrow');
-    lottie.loadAnimation({
-        container: lottieArrow,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: './assets/lottie/laetitia-pafundi-animation.json'
-    });
 });
