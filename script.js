@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const offsetY = mouseY - initialY;
 
         tadaFirst.style.transform = `translate(${offsetX / 10}px, ${offsetY / 10}px)`;
-        tadaSecond.style.transform = `translate(${-offsetX / 10}px, ${-offsetY / 10}px)`;
+        // tadaSecond.style.transform = `translate(${-offsetX / 10}px, ${-offsetY / 10}px)`;
     });
 
     const sections = document.querySelectorAll('.full-page-container');
