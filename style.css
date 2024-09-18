@@ -145,8 +145,19 @@ a {
 }
 
 .arrow-down {
-    margin: 20px auto;
-    width: 50%;
+    font-size: 2rem;
+    animation: bounce 1.5s infinite;
+    position: relative;
+    color: var(--secondary-color);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 10px;
+    }
 }
 
 .pdf-embed-container {
@@ -177,7 +188,7 @@ a {
     width: 100%;
     background-color: var(--background-color);
     color: var(--secondary-color);
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 20px;
     font-size: 10px;
 }
